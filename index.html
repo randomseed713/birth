@@ -2,25 +2,52 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>生日礼物转盘 🎁</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>我们的时光 ❤️</title>
+    <link rel="stylesheet" href="countdown.css">
 </head>
 <body>
     <div class="container">
-        <h1>🎂 生日快乐！🎂</h1>
-        <p class="subtitle">转动转盘，看看你会得到什么礼物~</p>
+        <h1 class="title">💕 我们的时光 💕</h1>
         
-        <div class="wheel-container">
-            <div class="pointer">▼</div>
-            <canvas id="wheel" width="500" height="500"></canvas>
+        <div class="countdown-grid">
+            <div class="countdown-card">
+                <div class="emoji">🌟</div>
+                <div class="label">相识</div>
+                <div class="days" id="metDays">0</div>
+                <div class="sublabel">天</div>
+                <div class="date">2025.11.16</div>
+            </div>
+            
+            <div class="countdown-card">
+                <div class="emoji">❤️</div>
+                <div class="label">在一起</div>
+                <div class="days" id="togetherDays">0</div>
+                <div class="sublabel">天</div>
+                <div class="date">2025.12.07</div>
+            </div>
+            
+            <div class="countdown-card birthday">
+                <div class="emoji">🎂</div>
+                <div class="label">生日倒计时</div>
+                <div class="days" id="birthdayCountdown">0</div>
+                <div class="sublabel">天</div>
+                <div class="date">2026.02.05</div>
+            </div>
         </div>
         
-        <button id="spinBtn" class="spin-button">开始抽奖</button>
+        <div class="message" id="message"></div>
         
-        <div id="result" class="result"></div>
+        <div class="button-group">
+            <button class="gift-button" onclick="location.href='billiards.html'">
+                🎮 开始游戏
+            </button>
+            <button class="gift-button secondary" id="wheelButton" onclick="checkGameAndNavigate()">
+                🎁 抽取礼物
+            </button>
+        </div>
     </div>
     
-    <script src="script.js"></script>
+    <script src="countdown.js"></script>
 </body>
 </html>

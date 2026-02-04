@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>台球小游戏 🎱</title>
+    <link rel="stylesheet" href="billiards.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <button class="back-button" onclick="location.href='index.html'">
+                ← 返回首页
+            </button>
+            <h1>🎱 台球小游戏 🎱</h1>
+            <div class="game-info">
+                <div class="score-display">🎯 进球: <span id="score">0</span>/4</div>
+            </div>
+            <p class="game-tip">拖动白球瞄准方向，再拖动调整力度，松开击球！</p>
+            <div class="controls-hint">
+                <div class="control-item">
+                    <span class="control-icon">🎯</span>
+                    <span>第一次拖动选择方向</span>
+                </div>
+                <div class="control-item">
+                    <span class="control-icon">💪</span>
+                    <span>第二次拖动调整力度</span>
+                </div>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="350" height="600"></canvas>
+        
+        <div class="result-screen" id="resultScreen">
+            <h2 class="result-title">🎉 恭喜过关！🎉</h2>
+            <div class="result-message">你真是台球高手！<br>现在去抽取你的生日礼物吧~ ❤️</div>
+            <button class="next-button" onclick="location.href='wheel.html'">
+                🎁 抽取生日礼物
+            </button>
+        </div>
+    </div>
+    
+    <script src="billiards.js"></script>
+</body>
+</html>

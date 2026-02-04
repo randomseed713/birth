@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>生日礼物转盘 🎁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="back-button" onclick="location.href='index.html'">
+            ← 返回首页
+        </button>
+        <h1>🎂 生日快乐！🎂</h1>
+        <p class="subtitle">转动转盘，看看你会得到什么礼物~</p>
+        
+        <div class="wheel-container">
+            <div class="pointer">▼</div>
+            <canvas id="wheel" width="350" height="350"></canvas>
+        </div>
+        
+        <button id="spinBtn" class="spin-button">开始抽奖</button>
+        
+        <div id="result" class="result"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
