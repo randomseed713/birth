@@ -1,13 +1,13 @@
 // 礼物选项 - 可以自定义修改
 const gifts = [
-    { name: '🏖️ 海边度假', color: '#FF6B6B' },
-    { name: '🍽️ 米其林晚餐', color: '#4ECDC4' },
-    { name: '💆 SPA按摩', color: '#FFE66D' },
-    { name: '🎬 看电影约会', color: '#95E1D3' },
-    { name: '🎨 一起画画', color: '#F38181' },
-    { name: '🌃 夜景散步', color: '#AA96DA' },
+    { name: '可随时兑换的空白支票', color: '#FF6B6B' },
+    { name: '承包一辈子洗头', color: '#4ECDC4' },
+    { name: '每年生日给老婆手写一封情书', color: '#FFE66D' },
+    { name: '陪老婆去任何想去的地方', color: '#95E1D3' },
+    { name: '临睡和醒来，永远是"老婆"', color: '#F38181' },
+    { name: '永远给状态不好的老婆充电', color: '#AA96DA' },
     { name: '🎁 神秘礼物', color: '#FCBAD3' },
-    { name: '🎵 演唱会', color: '#A8E6CF' }
+    { name: '永远不让你哭', color: '#A8E6CF' }
 ];
 
 const canvas = document.getElementById('wheel');
